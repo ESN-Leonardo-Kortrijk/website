@@ -13,7 +13,7 @@ export default function NavLink({
 }) {
     const currentPath = usePathname();
   return (
-    <Link className={currentPath === href ? `border-b-2 border-esn-cyan` : ""} href={href}>
+    <Link className={currentPath === href ? `border-b-2 border-${color}` : ""} href={href}>
         <p>{title}</p>
     </Link>
   );

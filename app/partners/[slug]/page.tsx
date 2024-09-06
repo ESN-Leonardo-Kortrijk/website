@@ -1,5 +1,5 @@
 import fs from "fs";
-import Markdown from "markdown-to-jsx";
+import ReactMarkdown from 'react-markdown';
 import matter from "gray-matter";
 import getPostMetadata from "@/components/getPostMetadata";
 import Nav from "@/components/Nav";
@@ -27,7 +27,9 @@ const PostPage = (props: any) => {
             <div className="p-8">
                 <h1 className="text-4xl font-bold">{post.data.title}</h1>
                 <p className="text-neutral-300 mb-8">{post.data.date}</p>
-                <Markdown>{post.content}</Markdown>
+                <article className="prose">
+                    <ReactMarkdown>{post.content}</ReactMarkdown>
+                </article>
             </div>
         </div>;
     for (const link in post.data.links) {
