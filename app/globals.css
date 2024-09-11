@@ -21,6 +21,7 @@
   }
   .embla__slide {
     transform: translate3d(0, 0, 0);
+    z-index: -1000;
     flex: 0 0 var(--slide-size);
     min-width: 0;
     padding-left: var(--slide-spacing);

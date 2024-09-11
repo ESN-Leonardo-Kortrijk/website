@@ -7,7 +7,7 @@ export default function Home() {
   const SLIDE_COUNT = 5
   const SLIDES = []
   return (
-    <div className="h-screen w-4/5 m-auto">
+    <div className="h-screen w-full m-auto">
       <EmblaCarousel slides={[]} options={OPTIONS}/>
       <blockquote style={{minWidth: "100%"}} className="instagram-media" data-instgrm-permalink="https://www.instagram.com/esnleonardokortrijk/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14">
         <div className="padding">
@@ -30,7 +30,7 @@ export default function Home() {
           </div>
         </div>
       </blockquote>
-      <Script async src="http://www.instagram.com/embed.js"></Script>
+      <Script async src="https://www.instagram.com/embed.js"></Script>
     </div>
   );
 }

@@ -21,6 +21,11 @@ const config: Config = {
         "esn-orange": "#F47B20",
         "esn-dark-blue": "#2E3192",
       },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+        lato: ["Lato", "sans-serif"],
+        kelson_sans: ["Kelson Sans", "sans-serif"],
+      },
     },
   },
 };

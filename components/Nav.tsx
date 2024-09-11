@@ -15,11 +15,11 @@ export default function Nav() {
     };
     
     return (
-        <nav className="bg-gray-200 fixed w-screen">
-                <div className="border-esn-green"></div>
-                <div className="border-esn-cyan"></div>
-                <div className="border-esn-magenta"></div>
-                <div className="border-esn-orange"></div>
+        <nav className="bg-gray-200 fixed w-screen z-50 font-lato">
+                <div className="border-esn-green hover:border-esn-green"></div>
+                <div className="border-esn-cyan hover:border-esn-cyan"></div>
+                <div className="border-esn-magenta hover:border-esn-magenta"></div>
+                <div className="border-esn-orange hover:border-esn-orange"></div>
             <div className="flex justify-between h-20 items-center w-4/5 m-auto">
                 <Link href={"/"}>
                     <Image src="/images/ESN_Leo_logo.png" alt="logo" width={150} height={100} />
