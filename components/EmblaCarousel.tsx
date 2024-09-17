@@ -52,13 +52,13 @@ Join us for a cozy campfire night to meet new friends and celebrate your arrival
 When: Tuesday, September 17th at 8:00 PM
 Where: Nelson Mandelapark, Kortrijk
 
-We'll have delicious pizza for everyone, and we'll also be selling drinks at great prices! 🍕🥤
+We&apos;ll have delicious pizza for everyone, and we&apos;ll also be selling drinks at great prices! 🍕🥤
 
-Don't forget to pick up your ESN card at the event! 💳
+Don&apos;t forget to pick up your ESN card at the event! 💳
 
-If you have any questions, please don't hesitate to reach out to us. 
+If you have any questions, please don&apos;t hesitate to reach out to us. 
 
-Don't miss out on this fun event to kick off your adventure in Kortrijk! 
+Don&apos;t miss out on this fun event to kick off your adventure in Kortrijk! 
 </p>
 <p>...</p>
           </div>

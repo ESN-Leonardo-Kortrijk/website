@@ -26,7 +26,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  console.log(lato.className);
   return (
     <html lang="en">
       <body className={lato.className + "font-lato relative"}>
