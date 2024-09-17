@@ -96,9 +96,9 @@ export default function CityGuide() {
   };
 
   return (
-    <div className="flex sm:flex-row flex-col gap-2 w-4/5 m-auto overflow-hidden">
-      <div className="w-1/2 flex gap-2 flex-col max-h-[36rem] overflow-y-scroll">
+    <div className="flex sm:flex-row flex-col gap-2 w-4/5 pt-4 m-auto overflow-hidden">
         <h1 className="font-bold text-2xl">City Guide</h1>
+      <div className="sm:w-1/2 w-full flex gap-2 flex-col max-h-80 sm:max-h-[36rem] overflow-y-scroll">
         {locations.map((location, index) => (
           <div key={index} className="bg-white-700 p-2 flex flex-col gap-2">
             <h2 className="font-bold text-l">{location.name}</h2>
@@ -107,7 +107,7 @@ export default function CityGuide() {
           </div>
         ))}
       </div>
-      <div className="bg-white-700 mx-auto my-5 sm:w-1/2 w-full h-[480px]">
+      <div className="bg-white-700 mx-auto my-5 sm:w-1/2 w-full h-96 sm:h-[480px]">
         <Map posix={mapLocation as LatLngExpression | LatLngTuple} name={mapName} address={mapAddress} />
       </div>
     </div>
