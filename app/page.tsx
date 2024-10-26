@@ -72,8 +72,8 @@ export default function Home() {
         <li className="p-4 border rounded-md shadow-md ">
           <h4 className="font-bold text-lg">Thelma & Louise</h4>
           <p>
-            One of the famous belgian "frituren", come here for some amazing
-            fries and snacks.
+            One of the famous belgian &quot;frituren&quot;, come here for some
+            amazing fries and snacks.
           </p>
         </li>
         <li className="p-4 border rounded-md shadow-md ">
