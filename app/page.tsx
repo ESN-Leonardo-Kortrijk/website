@@ -3,15 +3,24 @@ import { EmblaOptionsType } from "embla-carousel";
 import Script from "next/script";
 
 export default function Home() {
-  const OPTIONS: EmblaOptionsType = {loop: true}
-  const SLIDE_COUNT = 5
-  const SLIDES = []
+  const OPTIONS: EmblaOptionsType = { loop: true };
+  const SLIDE_COUNT = 5;
+  const SLIDES = [];
   return (
     <div className="h-screen w-full m-auto">
-      <EmblaCarousel slides={[]} options={OPTIONS}/>
-      <blockquote style={{minWidth: "100%"}} className="instagram-media" data-instgrm-permalink="https://www.instagram.com/esnleonardokortrijk/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14">
+      <EmblaCarousel slides={[]} options={OPTIONS} />
+      <blockquote
+        style={{ minWidth: "100%" }}
+        className="instagram-media"
+        data-instgrm-permalink="https://www.instagram.com/esnleonardokortrijk/?utm_source=ig_embed&amp;utm_campaign=loading"
+        data-instgrm-version="14"
+      >
         <div className="padding">
-          <a href="https://www.instagram.com/esnleonardokortrijk/?utm_source=ig_embed&amp;utm_campaign=loading" className="instagram-link" target="_blank">
+          <a
+            href="https://www.instagram.com/esnleonardokortrijk/?utm_source=ig_embed&amp;utm_campaign=loading"
+            className="instagram-link"
+            target="_blank"
+          >
             <div className="profile-picture"></div>
             <div className="post-details">
               <div className="post-title"></div>

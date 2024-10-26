@@ -4,9 +4,9 @@ import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import { LatLngExpression, LatLngTuple } from "leaflet";
 import { useEffect, useRef } from "react";
 
-import "leaflet/dist/leaflet.css";
-import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
-import "leaflet-defaulticon-compatibility";
+// import "leaflet/dist/leaflet.css";
+// import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
+// import "leaflet-defaulticon-compatibility";
 
 interface MapProps {
   posix: LatLngExpression | LatLngTuple;
@@ -19,7 +19,13 @@ const defaults = {
   zoom: 18,
 };
 
-const MapUpdater = ({ posix, zoom }: { posix: LatLngExpression, zoom: number }) => {
+const MapUpdater = ({
+  posix,
+  zoom,
+}: {
+  posix: LatLngExpression;
+  zoom: number;
+}) => {
   const map = useMap();
   const previousPosix = useRef<LatLngExpression | null>(null); // Track previous location
 
@@ -58,7 +64,8 @@ const Map = (Map: MapProps) => {
           {name} <br /> {address}
         </Popup>
       </Marker>
-      <MapUpdater posix={posix} zoom={zoom} /> {/* This ensures the map flies only on location change */}
+      <MapUpdater posix={posix} zoom={zoom} />{" "}
+      {/* This ensures the map flies only on location change */}
     </MapContainer>
   );
 };
