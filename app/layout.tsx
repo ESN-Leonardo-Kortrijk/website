@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={lato.className + "font-lato relative"}>
-        <Nav />        
+        {/* <Nav />         */}
         <div className="pt-20 font-kelson_sans">{children}</div>
         </body>
     </html>
