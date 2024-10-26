@@ -241,7 +241,7 @@ export default function CityGuide() {
 
   return (
     <div className="flex sm:col-row flex-col gap-2 w-4/5 pt-4 m-auto overflow-hidden">
-      {/* <h1 className="font-bold text-2xl">City Guide</h1>
+      <h1 className="font-bold text-2xl">City Guide</h1>
       <div className="flex">
         <div className="sm:w-1/2 w-full flex gap-2 flex-col max-h-80 sm:max-h-[36rem] overflow-y-scroll">
           {locations.map((category, catIndex) => (
@@ -273,7 +273,7 @@ export default function CityGuide() {
             address={mapAddress}
           />
         </div>
-        </div> */}
+      </div>
     </div>
   );
 }
