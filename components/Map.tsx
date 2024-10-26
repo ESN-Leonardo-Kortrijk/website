@@ -4,9 +4,9 @@ import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import { LatLngExpression, LatLngTuple } from "leaflet";
 import { useEffect, useRef } from "react";
 
-// import "leaflet/dist/leaflet.css";
-// import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
-// import "leaflet-defaulticon-compatibility";
+import "leaflet/dist/leaflet.css";
+import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
+import "leaflet-defaulticon-compatibility";
 
 interface MapProps {
   posix: LatLngExpression | LatLngTuple;
