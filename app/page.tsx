@@ -8,7 +8,7 @@ export default function Home() {
   const SLIDE_COUNT = 5;
   const SLIDES = [];
   return (
-    <div className="h-screen w-4/5 m-auto">
+    <div className="h-screen w-4/5 max-w-[1920px] m-auto">
       <Image
         width={200}
         height={400}
@@ -19,51 +19,82 @@ export default function Home() {
         {" "}
         Website in development
       </h1>
-      <h2 className="text-2xl font-bold font-kelson_sans">Board:</h2>
-      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        <li className="p-4 border rounded-md shadow-md">
-          <h4 className="font-bold text-lg">President</h4>
-          <p>Giquardo</p>
-        </li>
-        <li className="p-4 border rounded-md shadow-md">
-          <h4 className="font-bold text-lg">Vice</h4>
-          <p>Alessia</p>
-        </li>
-        <li className="p-4 border rounded-md shadow-md">
-          <h4 className="font-bold text-lg">Treasurer</h4>
-          <p>Pieter</p>
-        </li>
-        <li className="p-4 border rounded-md shadow-md">
-          <h4 className="font-bold text-lg">Local Representative</h4>
-          <p>Jasper</p>
-        </li>
-        <li className="p-4 border rounded-md shadow-md">
-          <h4 className="font-bold text-lg">IT Manager</h4>
-          <p>Senne</p>
-        </li>
-        <li className="p-4 border rounded-md shadow-md">
-          <h4 className="font-bold text-lg">HR Manager</h4>
-          <p>Timo</p>
-        </li>
-        <li className="p-4 border rounded-md shadow-md">
-          <h4 className="font-bold text-lg">Event Manager</h4>
-          <p>Quentin</p>
-        </li>
-        <li className="p-4 border rounded-md shadow-md">
-          <h4 className="font-bold text-lg">Graphic Designer</h4>
-          <p>Nastia</p>
-        </li>
-        <li className="p-4 border rounded-md shadow-md">
-          <h4 className="font-bold text-lg">Partnerships Manager</h4>
-          <p>Edzra</p>
-        </li>
-        <li className="p-4 border rounded-md shadow-md">
-          <h4 className="font-bold text-lg">Communication Manager</h4>
-          <p>Fien</p>
-        </li>
+      <h2 className="text-2xl font-bold font-kelson_sans pt-4 pb-2">Board:</h2>
+      <ul className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <li className="border rounded-md shadow-md">
+  <div className="p-4">
+    <h4 className="font-bold text-lg">President</h4>
+    <p>Giquardo</p>
+  </div>
+  <Image className="rounded-b-md" src="/images/board/praeses.jpg" width={600} height={300} alt="" />
+</li>
+<li className="border rounded-md shadow-md">
+  <div className="p-4">
+    <h4 className="font-bold text-lg">Vice</h4>
+    <p>Alessia</p>
+  </div>
+  <Image className="rounded-b-md" src="/images/board/vice.jpg" width={600} height={300} alt="" />
+</li>
+<li className="border rounded-md shadow-md">
+  <div className="p-4">
+    <h4 className="font-bold text-lg">Treasurer</h4>
+    <p>Pieter</p>
+  </div>
+  {/* <Image className="rounded-b-md" src="/images/board/treasurer.jpg" width={600} height={300} alt="" /> */}
+</li>
+<li className="border rounded-md shadow-md">
+  <div className="p-4">
+    <h4 className="font-bold text-lg">Local Representative</h4>
+    <p>Jasper</p>
+  </div>
+  <Image className="rounded-b-md" src="/images/board/local_representative.jpg" width={600} height={300} alt="" />
+</li>
+<li className="border rounded-md shadow-md">
+  <div className="p-4">
+    <h4 className="font-bold text-lg">IT Manager</h4>
+    <p>Senne</p>
+  </div>
+  <Image className="rounded-b-md" src="/images/board/it.jpg" width={600} height={300} alt="" />
+</li>
+<li className="border rounded-md shadow-md">
+  <div className="p-4">
+    <h4 className="font-bold text-lg">HR Manager</h4>
+    <p>Timo</p>
+  </div>
+  <Image className="rounded-b-md" src="/images/board/hr.jpg" width={600} height={300} alt="" />
+</li>
+<li className="border rounded-md shadow-md">
+  <div className="p-4">
+    <h4 className="font-bold text-lg">Event Manager</h4>
+    <p>Quentin</p>
+  </div>
+  <Image className="rounded-b-md" src="/images/board/event.jpg" width={600} height={300} alt="" />
+</li>
+<li className="border rounded-md shadow-md">
+  <div className="p-4">
+    <h4 className="font-bold text-lg">Graphic Designer</h4>
+    <p>Nastia</p>
+  </div>
+  <Image className="rounded-b-md" src="/images/board/graphics.jpg" width={600} height={300} alt="" />
+</li>
+<li className="border rounded-md shadow-md">
+  <div className="p-4">
+    <h4 className="font-bold text-lg">Partnerships Manager</h4>
+    <p>Edzra</p>
+  </div>
+  <Image className="rounded-b-md" src="/images/board/partnership.jpg" width={600} height={300} alt="" />
+</li>
+<li className="border rounded-md shadow-md">
+  <div className="p-4">
+    <h4 className="font-bold text-lg">Communication Manager</h4>
+    <p>Fien</p>
+  </div>
+  <Image className="rounded-b-md" src="/images/board/communication.jpg" width={600} height={300} alt="" />
+</li>
+
       </ul>
 
-      <h2 className="text-2xl font-bold font-kelson_sans">Partners:</h2>
+      <h2 className="text-2xl font-bold font-kelson_sans pt-4 pb-2">Partners:</h2>
       <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         <li className="p-4 border rounded-md shadow-md ">
           <h4 className="font-bold text-lg">Café 56</h4>
@@ -96,15 +127,27 @@ export default function Home() {
         </li>
       </ul>
 
-      <h2 className="text-2xl font-bold font-kelson_sans mb-4">Linktree:</h2>
-      <a
-        href="https://linktr.ee/esnleonardokortrijk"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="px-4 py-2 bg-esn-dark-blue text-white font-semibold rounded-md hover:bg-esn-cyan transition"
-      >
-        Visit Our Linktree
-      </a>
+      <div className="py-4">
+        <h2 className="text-2xl font-bold font-kelson_sans mb-4">Links:</h2>
+        <div className="flex justify-between max-w-sm">
+          <a
+            href="https://linktr.ee/esnleonardokortrijk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 bg-esn-dark-blue text-white font-semibold rounded-md hover:bg-esn-cyan transition"
+          >
+            Visit Our Linktree
+          </a>
+          <a
+            href="/city-guide"
+            target=""
+            rel="noopener noreferrer"
+            className="px-4 py-2 bg-esn-dark-blue text-white font-semibold rounded-md hover:bg-esn-cyan transition"
+          >
+            Visit Our City Guide
+          </a>
+        </div>
+      </div>
 
       {/* <EmblaCarousel slides={[]} options={OPTIONS}/>
       <blockquote style={{minWidth: "100%"}} className="instagram-media" data-instgrm-permalink="https://www.instagram.com/esnleonardokortrijk/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14">
