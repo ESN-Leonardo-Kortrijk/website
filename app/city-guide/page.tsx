@@ -234,7 +234,7 @@ export default function CityGuide() {
     <div className="flex flex-col gap-2 w-4/5 pt-4 m-auto overflow-hidden">
       <h1 className="font-bold text-2xl">City Guide</h1>
       <div className="flex sm:flex-row flex-col">
-        <div className="sm:w-1/2 w-full flex gap-2 flex-col max-h-80 sm:max-h-[36rem] overflow-y-scroll">
+        <div className="sm:w-1/2 w-full flex gap-2 flex-col max-h-96 sm:max-h-[36rem] overflow-y-scroll border shadow-md rounded-md p-4 mr-4 mb-4">
           {locations.map((category, catIndex) => (
             <div key={catIndex}>
               <h1 className="font-bold text-xl">{category.category}</h1>
@@ -254,7 +254,7 @@ export default function CityGuide() {
           ))}
         </div>
         
-        <div className="bg-white-700 mx-auto my-5 sm:w-1/2 w-full h-96 sm:h-[480px]">
+        <div className="bg-white-700 mx-auto sm:w-1/2 w-full h-96 sm:h-[580px] mb-2 rounded-md shadow-md">
           <Map
             posix={mapLocation as LatLngExpression | LatLngTuple}
             name={mapName}

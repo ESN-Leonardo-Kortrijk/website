@@ -47,7 +47,7 @@ const Map = (Map: MapProps) => {
       center={posix}
       zoom={zoom}
       scrollWheelZoom={false}
-      style={{ height: "100%", width: "100%" }}
+      style={{ height: "100%", width: "100%", borderRadius: "inherit", boxShadow:"inherit" }}
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
