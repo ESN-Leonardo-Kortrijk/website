@@ -225,6 +225,7 @@ export default function CityGuide() {
   return (
     <div className="flex flex-col gap-2 w-4/5 pt-4 m-auto overflow-hidden">
       <h1 className="font-bold text-2xl">City Guide</h1>
+      <p>If you spot a mistake in the list, please let us know through one of our socials.</p>
       <div className="flex sm:flex-row flex-col">
         <div className="sm:w-1/2 w-full flex gap-2 flex-col max-h-96 sm:max-h-[36rem] overflow-y-scroll border shadow-md rounded-md p-4 mr-4 mb-4">
           {locations.map((category, catIndex) => (
