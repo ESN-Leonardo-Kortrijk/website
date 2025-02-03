@@ -45,14 +45,6 @@ export default function CityGuide() {
         category: "Restaurants and Cafes",
         businesses: [
           {
-            name: "Pastaciutta - pasta and drinks",
-            address: "Magdalenastraat 15, 8500 Kortrijk"
-          },
-          {
-            name: "Pastaciutta - pasta and drinks",
-            address: "Lange-Steenstraat 5, 8500 Kortrijk"
-          },
-          {
             name: "Waffles atelier",
             address: "Grote Kring 7, 8500 Kortrijk"
           },
