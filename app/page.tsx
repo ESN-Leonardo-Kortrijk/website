@@ -37,13 +37,6 @@ export default function Home() {
 </li>
 <li className="border rounded-md shadow-md">
   <div className="p-4">
-    <h4 className="font-bold text-lg">Treasurer</h4>
-    <p>Pieter</p>
-  </div>
-  {/* <Image className="rounded-b-md" src="/images/board/treasurer.jpg" width={600} height={300} alt="" /> */}
-</li>
-<li className="border rounded-md shadow-md">
-  <div className="p-4">
     <h4 className="font-bold text-lg">Local Representative</h4>
     <p>Jasper</p>
   </div>
@@ -90,6 +83,13 @@ export default function Home() {
     <p>Fien</p>
   </div>
   <Image className="rounded-b-md" src="/images/board/communication.jpg" width={600} height={300} alt="" />
+</li>
+<li className="border rounded-md shadow-md">
+  <div className="p-4">
+    <h4 className="font-bold text-lg">Treasurer</h4>
+    <p>Pieter</p>
+  </div>
+  {/* <Image className="rounded-b-md" src="/images/board/treasurer.jpg" width={600} height={300} alt="" /> */}
 </li>
 
       </ul>
