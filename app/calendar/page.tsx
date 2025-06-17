@@ -1,5 +1,19 @@
 export default function Calendar() {
     return (
-        <iframe src="https://ionized-volleyball-b48.notion.site/Personal-Website-9eee70110fe84dc8913ce48e80ad1181?pvs=4" className="w-full"></iframe>
+
+        <div className="h-screen w-4/5 max-w-[1920px] m-auto">
+            <iframe
+                src="https://embed.styledcalendar.com/#1NrTXvfk1jtXz09yIPtP"
+                title="Styled Calendar"
+                className="w-full min-h-[600px] styled-calendar-container"
+                style={{ border: "none" }}
+                data-cy="calendar-embed-iframe"
+            ></iframe>
+            <script
+                async
+                type="module"
+                src="https://embed.styledcalendar.com/assets/parent-window.js"
+            ></script>
+        </div>
     );
 }

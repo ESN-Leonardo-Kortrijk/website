@@ -1,0 +1,58 @@
+[
+    {
+        "slug": "howest",
+        "title": "Howest",
+        "subtitle": "some text as a test",
+        "img": "/images/partners/Howest.jpg",
+        "date": "2024-06-17",
+        "links": {
+            "website": "https://www.howest.be/en?gad_source=1&gclid=EAIaIQobChMIpMS60pijiwMVM5VoCR1Dshs5EAAYASAAEgLP5fD_BwE"
+        },
+        "content": "blablabla\n# test title\n"
+    },
+    {
+        "slug": "vives",
+        "title": "Vives",
+        "subtitle": "some text as a test",
+        "img": "/images/partners/Vives.png",
+        "date": "2024-06-17",
+        "links": {
+            "website": "https://www.vives.be/en/vives-international"
+        },
+        "content": "Vives is a partner.\n\n## More info\n..."
+    },
+    {
+        "slug": "thelma-louise",
+        "title": "Thelma & Louise",
+        "subtitle": "Fry place in Kortrijk",
+        "img": "/images/partners/Thelma&Louise.jpg",
+        "date": "2024-06-17",
+        "links": {
+            "facebook": "https://www.facebook.com/FrituurThelmaLouise/"
+        },
+        "content": "Thelma & Louise is a well known Fry place in Kortrijk, popular among students and locals alike."
+    },
+    {
+        "slug": "kortrijk-studenten-stad",
+        "title": "Kortrijk Studenten Stad",
+        "subtitle": "Student life in Kortrijk",
+        "img": "/images/kortrijk_studenten_stad.jpg",
+        "date": "2024-06-17",
+        "links": {
+            "website": "https://www.kortrijkstudentenstad.be",
+            "facebook": "https://www.facebook.com/KortrijkStudentenstad"
+        },
+        "content": "Kortrijk Studenten Stad supports and promotes student life in Kortrijk."
+    },
+    {
+        "slug": "cafe-56",
+        "title": "Café 56",
+        "subtitle": "Iconic café in Kortrijk",
+        "img": "/images/cafe_56.jpg",
+        "date": "2024-06-17",
+        "links": {
+            "facebook": "https://www.facebook.com/Cafe56Kortrijk"
+        },
+        "content": "Café 56 is an iconic meeting place for students and locals in the heart of Kortrijk."
+    }
+]

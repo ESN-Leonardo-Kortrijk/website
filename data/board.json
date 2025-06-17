@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Giquardo",
+    "function": "President",
+    "image": "giquardo.jpg"
+  },
+  {
+    "name": "Alessia",
+    "function": "Secretary",
+    "image": "alessia.jpg"
+  },
+  {
+    "name": "Quentin",
+    "function": "Vice-President",
+    "image": "quentin.jpg"
+  },
+  {
+    "name": "Jasper",
+    "function": "Local Representative",
+    "image": "jasper.jpg"
+  },
+  {
+    "name": "Senne",
+    "function": "IT Manager",
+    "image": "senne.jpg"
+  },
+  {
+    "name": "Edzra",
+    "function": "Partnerships Manager",
+    "image": "edzra.jpg"
+  }
+]

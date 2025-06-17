@@ -1,0 +1,26 @@
+[
+    {
+        "href": "/about-us",
+        "label": "About Us"
+    },
+    {
+        "href": "/esncard",
+        "label": "ESNcard"
+    },
+    {
+        "href": "/calendar",
+        "label": "Calendar"
+    },
+    {
+        "href": "/partners",
+        "label": "Partners"
+    },
+    {
+        "href": "/city-guide",
+        "label": "City Guide"
+    },
+    {
+        "href": "/contact-us",
+        "label": "Contact Us!"
+    }
+]
