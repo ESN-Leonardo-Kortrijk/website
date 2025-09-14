@@ -1,43 +1,93 @@
-import fs from "fs";
-import ReactMarkdown from 'react-markdown';
-import matter from "gray-matter";
-import getPostMetadata from "@/components/getPostMetadata";
-import Nav from "@/components/Nav";
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import ReactMarkdown from "react-markdown";
+import partners from "@/data/partners.json";
 
-const getPostcontent = (slug: string) => {
-    const folder = "articles/partnerships/";
-    const file = `${folder}${slug}.md`;
-    const content = fs.readFileSync(file, "utf-8");
-    const matterResult = matter(content);
-    return matterResult;
+type Partner = {
+    slug: string;
+    title: string;
+    subtitle?: string;
+    img?: string;
+    date?: string;
+    links?: Record<string, string>;
+    content?: string; // optional markdown stored in JSON
 };
 
-export const generateStaticParams = async () => {
-    const posts = getPostMetadata({ folder: "articles/partnerships/" });
-    return posts.map((post) => ({
-        slug: post.slug,
-    }));
+function getPartner(slug: string): Partner | undefined {
+    return (partners as Partner[]).find((p) => p.slug === slug);
 }
 
-const PostPage = (props: any) => {
-    const slug = props.params.slug;
-    const post = getPostcontent(slug);
-    let html = <div className="w-4/5 lg:w-2/5 mx-auto pt-4">
-            <img className="w-full rounded-lg shadow" src={post.data.img} alt="" />
-            <div className="p-8">
-                <h1 className="text-4xl font-bold">{post.data.title}</h1>
-                <p className="text-neutral-300 mb-8">{post.data.date}</p>
-                <article className="prose">
-                    <ReactMarkdown>{post.content}</ReactMarkdown>
-                </article>
-            </div>
-        </div>;
-    for (const link in post.data.links) {
-        console.log(post.data.links[link]);
-    }
-    return (
-        html
-    );
-};
+export function generateStaticParams() {
+    return (partners as Partner[]).map((p) => ({ slug: p.slug }));
+}
 
-export default PostPage;
+export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+    const p = getPartner(params.slug);
+    if (!p) return { title: "Partner not found" };
+    return { title: `${p.title} — Partner`, description: p.subtitle };
+}
+
+export default function PartnerPage({ params }: { params: { slug: string } }) {
+    const p = getPartner(params.slug);
+    if (!p) return notFound();
+
+    const entries = Object.entries(p.links ?? {});
+
+    return (
+        <div className="w-full max-w-5xl mx-auto px-4 py-10">
+            <Link href="/partners" className="text-esn-dark-blue underline hover:text-esn-cyan">
+                ← Back to partners
+            </Link>
+
+            <header className="mt-4 mb-8">
+                <h1 className="text-3xl font-extrabold text-esn-dark-blue">{p.title}</h1>
+                {p.subtitle && <p className="mt-2 text-gray-600">{p.subtitle}</p>}
+                {p.date && <p className="text-sm text-gray-500 mt-1">{p.date}</p>}
+            </header>
+
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                {/* Logo / image (no border/shadow/background) */}
+                <div className="lg:col-span-1 self-start">
+                    <div className="relative aspect-[16/9] bg-transparent border-0 ring-0 shadow-none rounded-none">
+                        <div className="absolute inset-0 flex items-center justify-center p-4">
+                            <img
+                                src={p.img || "/images/ESN_Leo_logo.png"}
+                                alt={p.title}
+                                className="max-w-full max-h-full object-contain border-0 ring-0 shadow-none outline-none"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                {/* Details */}
+                <div className="lg:col-span-2">
+                    {entries.length > 0 && (
+                        <div className="mb-6 flex flex-wrap gap-3">
+                            {entries.map(([label, href]) => (
+                                <a
+                                    key={label}
+                                    href={href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center px-4 py-2 rounded-md border border-esn-dark-blue text-esn-dark-blue hover:bg-esn-dark-blue hover:text-white transition"
+                                >
+                                    {label.charAt(0).toUpperCase() + label.slice(1)}
+                                </a>
+                            ))}
+                        </div>
+                    )}
+
+                    {p.content ? (
+                        <article className="prose">
+                            <ReactMarkdown>{p.content}</ReactMarkdown>
+                        </article>
+                    ) : (
+                        <p className="text-gray-700">More information coming soon.</p>
+                    )}
+                </div>
+            </div>
+        </div>
+    );
+}
