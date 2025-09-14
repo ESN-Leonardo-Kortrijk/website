@@ -1,14 +1,37 @@
-'use client'
+import Image from "next/image";
+import Link from "next/link";
 import EmblaCarousel from "@/components/EmblaCarousel";
 import { EmblaOptionsType } from "embla-carousel";
-import Image from "next/image";
-import { useRouter } from "next/navigation";
-import Script from "next/script";
+import partners from "@/data/partners.json";
+
+type Partner = {
+  slug: string;
+  title: string;
+  subtitle?: string;
+  img?: string;
+};
+
+function pickRandom<T>(arr: T[], n: number): T[] {
+  const copy = [...arr];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy.slice(0, Math.min(n, copy.length));
+}
 
 export default function Home() {
+  // Carousel images (static for now)
+  const SLIDES = [
+    "/images/partners/KortrijkStudentenStad.jpg",
+    "/images/partners/Howest.jpg",
+    "/images/partners/Vives.jpg",
+  ];
   const OPTIONS: EmblaOptionsType = { loop: true };
-  const SLIDE_COUNT = 5;
-  const SLIDES = [];
+
+  // Random 3 partners from JSON
+  const featuredPartners = pickRandom(partners as Partner[], 3);
+
   return (
     <main>
       {/* Hero */}
@@ -88,7 +111,7 @@ export default function Home() {
             <Link
               key={p.slug}
               href={`/partners/${p.slug}`}
-              className="group rounded-lg border overflow-hidden shadow hover:shadow-md transition bg-white"
+              className="group rounded-lg overflow-hidden shadow hover:shadow-md transition bg-white"
             >
               {/* Dynamic sizing: image grows to the largest possible without exceeding the box */}
               <div className="relative aspect-[16/9] bg-white">
