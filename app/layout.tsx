@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter, Lato } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
-import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 const lato = Lato({
@@ -58,7 +57,6 @@ export default function RootLayout({
             />
           </a>
           {/* Responsive Navbar */}
-          <Navbar />
         </header>
         {/* Social media floating balls */}
         <div className="fixed right-6 top-1/2 z-40 flex flex-col gap-4 -translate-y-1/2">
