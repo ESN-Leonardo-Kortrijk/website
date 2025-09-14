@@ -1,12 +1,15 @@
 import EmblaCarousel from "@/components/EmblaCarousel";
 import { EmblaOptionsType } from "embla-carousel";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import Script from "next/script";
 
 export default function Home() {
   const OPTIONS: EmblaOptionsType = { loop: true };
   const SLIDE_COUNT = 5;
   const SLIDES = [];
+  const router = useRouter()
+  router.push('/about-us')
   return (
     <div className="h-screen w-4/5 max-w-[1920px] m-auto">
 
