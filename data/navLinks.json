@@ -1,26 +1,32 @@
 [
-    {
-        "href": "/about-us",
-        "label": "About Us"
-    },
-    {
-        "href": "/esncard",
-        "label": "ESNcard"
-    },
-    {
-        "href": "/calendar",
-        "label": "Calendar"
-    },
-    {
-        "href": "/partners",
-        "label": "Partners"
-    },
-    {
-        "href": "/city-guide",
-        "label": "City Guide"
-    },
-    {
-        "href": "/contact-us",
-        "label": "Contact Us!"
-    }
+  {
+    "href": "/about-us",
+    "label": "About Us",
+    "children": [
+      { "label": "Who Are We", "href": "/about-us/who-we-are" },
+      { "label": "What Do We Do", "href": "/about-us/what-we-do" },
+      { "label": "Members", "href": "/about-us/members" },
+      { "label": "History", "href": "/about-us/history" }
+    ]
+  },
+  {
+    "href": "/esncard",
+    "label": "ESNcard"
+  },
+  {
+    "href": "/calendar",
+    "label": "Calendar"
+  },
+  {
+    "href": "/partners",
+    "label": "Partners"
+  },
+  {
+    "href": "/city-guide",
+    "label": "City Guide"
+  },
+  {
+    "href": "/contact-us",
+    "label": "Contact Us!"
+  }
 ]

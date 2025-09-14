@@ -1,7 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import EmblaCarousel from "@/components/EmblaCarousel";
-import { EmblaOptionsType } from "embla-carousel";
 import partners from "@/data/partners.json";
 
 type Partner = {
@@ -20,8 +18,8 @@ function pickRandom<T>(arr: T[], n: number): T[] {
   return copy.slice(0, Math.min(n, copy.length));
 }
 
-export default function Home() {
 
+export default async function Home() {
   // Random 3 partners from JSON
   const featuredPartners = pickRandom(partners as Partner[], 3);
 
@@ -67,30 +65,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Carousel */}
-      {/* <section className="mx-auto max-w-6xl px-4 mt-12">
-        <h2 className="text-2xl font-bold text-esn-dark-blue mb-4">Highlights</h2>
-        <EmblaCarousel slides={SLIDES} options={OPTIONS} />
-      </section> */}
-
-      {/* Quick links */}
-      <section className="mx-auto max-w-6xl px-4 mt-10">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-          <Link href="/esncard" className="block rounded-lg border p-6 shadow hover:shadow-md transition">
-            <h3 className="text-xl font-bold text-esn-dark-blue">ESNcard</h3>
-            <p className="mt-2 text-gray-600">Discounts, events, and perks across Europe.</p>
-          </Link>
-          <Link href="/calendar" className="block rounded-lg border p-6 shadow hover:shadow-md transition">
-            <h3 className="text-xl font-bold text-esn-dark-blue">Calendar</h3>
-            <p className="mt-2 text-gray-600">See what’s happening this month.</p>
-          </Link>
-          <Link href="/city-guide" className="block rounded-lg border p-6 shadow hover:shadow-md transition">
-            <h3 className="text-xl font-bold text-esn-dark-blue">City Guide</h3>
-            <p className="mt-2 text-gray-600">Explore Kortrijk like a local.</p>
-          </Link>
-        </div>
-      </section>
-
       {/* Partner highlights (random 3) with dynamic logo sizing */}
       <section className="mx-auto max-w-6xl px-4 mt-12 mb-16">
         <div className="flex items-baseline justify-between">
@@ -106,7 +80,6 @@ export default function Home() {
               href={`/partners/${p.slug}`}
               className="group rounded-lg overflow-hidden shadow hover:shadow-md transition bg-white"
             >
-              {/* Dynamic sizing: image grows to the largest possible without exceeding the box */}
               <div className="relative aspect-[16/9] bg-white">
                 <div className="absolute inset-0 flex items-center justify-center p-2">
                   <img
