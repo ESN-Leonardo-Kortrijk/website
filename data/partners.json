@@ -2,57 +2,70 @@
     {
         "slug": "howest",
         "title": "Howest",
-        "subtitle": "some text as a test",
+        "subtitle": "University of Applied Sciences",
         "img": "/images/partners/Howest.jpg",
-        "date": "2024-06-17",
         "links": {
-            "website": "https://www.howest.be/en?gad_source=1&gclid=EAIaIQobChMIpMS60pijiwMVM5VoCR1Dshs5EAAYASAAEgLP5fD_BwE"
+            "website": "https://www.howest.be/en?gad_source=1&gclid=EAIaIQobChMIpMS60pijiwMVM5VoCR1Dshs5EAAYASAAEgLP5fD_BwE",
+            "facebook": "https://www.facebook.com/howestbe",
+            "instagram": "https://www.instagram.com/howestbe",
+            "linkedin": "https://www.linkedin.com/school/howest-hogeschool-west-vlaanderen"
         },
-        "content": "blablabla\n# test title\n"
+        "content": "Howest (Hogeschool West-Vlaanderen) is a university of applied sciences with campuses in Bruges, Kortrijk, and Oudenaarde. They offer a broad range of bachelor programmes, associate degrees, and postgraduate certificates, with a strong practical, industry-linked approach. Howest is especially known for fields like Digital Design & Development, Cybersecurity, and Digital Arts & Entertainment."
     },
     {
         "slug": "vives",
-        "title": "Vives",
-        "subtitle": "some text as a test",
+        "title": "Vives University of Applied Sciences",
+        "subtitle": "University of Applied Sciences",
         "img": "/images/partners/Vives.png",
-        "date": "2024-06-17",
         "links": {
-            "website": "https://www.vives.be/en/vives-international"
+            "website": "https://www.vives.be/en/vives-international",
+            "facebook": "https://www.facebook.com/viveshogeschool",
+            "instagram": "https://www.instagram.com/viveshogeschool",
+            "linkedin": "https://www.linkedin.com/school/vives"
         },
-        "content": "Vives is a partner.\n\n## More info\n..."
+        "content": "VIVES University of Applied Sciences is one of the largest institutions of its kind in Belgium, welcoming more than 19,500 students across seven campuses in five West Flemish cities: Bruges, Kortrijk, Ostend, Roeselare, and Torhout. Located in the heart of Europe, VIVES offers a wide range of professionally oriented programmes that prepare students for the challenges of today’s globalised and fast-paced world."
     },
     {
         "slug": "thelma-louise",
         "title": "Thelma & Louise",
-        "subtitle": "Fry place in Kortrijk",
-        "img": "/images/partners/Thelma&Louise.jpg",
-        "date": "2024-06-17",
+        "subtitle": "Beloved fry shop among students and locals",
+        "img": "/images/partners/Thelma&Louise.png",
         "links": {
             "facebook": "https://www.facebook.com/FrituurThelmaLouise/"
         },
-        "content": "Thelma & Louise is a well known Fry place in Kortrijk, popular among students and locals alike."
+        "content": "Frituur Thelma & Louise is a beloved spot among students and locals in Kortrijk. Famous for its generous portions and wide selection of fries, snacks, and burgers, it’s the go-to place for a tasty meal with friends.\n\n**Deal:** ESN card holders enjoy a plain 10% discount after showing their card."
     },
     {
         "slug": "kortrijk-studenten-stad",
         "title": "Kortrijk Studenten Stad",
         "subtitle": "Student life in Kortrijk",
-        "img": "/images/kortrijk_studenten_stad.jpg",
-        "date": "2024-06-17",
+        "img": "/images/partners/KortrijkStudentenStad.jpg",
         "links": {
             "website": "https://www.kortrijkstudentenstad.be",
-            "facebook": "https://www.facebook.com/KortrijkStudentenstad"
+            "facebook": "https://www.facebook.com/KortrijkStudentenstad",
+            "instagram": "https://www.instagram.com/kortrijkstudent"
         },
-        "content": "Kortrijk Studenten Stad supports and promotes student life in Kortrijk."
+        "content": "Kortrijk Studentenstad vzw is a collaboration between the student services (STUVOs) of VIVES, KU Leuven Kulak, Howest, and UGent Campus Kortrijk, together with the city of Kortrijk. Their mission is to make sure there’s always something happening in the city for students. Throughout the academic year, they organize a wide variety of sports, cultural, and social activities to add extra color to student life. Events like Student Welcome, the Big Student Quiz, or the pool party Midnight Swim are just a few examples of what Kortrijk Studentenstad brings to the student community."
     },
     {
         "slug": "cafe-56",
         "title": "Café 56",
         "subtitle": "Iconic café in Kortrijk",
-        "img": "/images/cafe_56.jpg",
-        "date": "2024-06-17",
+        "img": "/images/partners/café56.jpg",
         "links": {
-            "facebook": "https://www.facebook.com/Cafe56Kortrijk"
+            "facebook": "https://www.facebook.com/Cafe56Kortrijk",
+            "instagram": "https://www.instagram.com/cafe56_kortrijk"
         },
-        "content": "Café 56 is an iconic meeting place for students and locals in the heart of Kortrijk."
+        "content": "Café 56 is a lively bar and party café located in the city center of Kortrijk, in 't Straatje – a popular street full of cafés. It is a well-known meeting spot for students, offering a vibrant atmosphere for parties, casual drinks, and social gatherings."
+    },
+    {
+        "slug": "pitta-snack-house",
+        "title": "Pitta House Snack",
+        "subtitle": "Tasty pitta and doner spot",
+        "img": "/images/partners/PittaHouseSnack.jpg",
+        "links": {
+            "facebook": "https://www.facebook.com/profile.php?id=100063489789670"
+        },
+        "content": "Pitta Snack House is a popular student spot in 't Straatje, known for its delicious pittas, kapsalons, durums, and doner dishes.\n\n**Deal:** Free drink with every large dish order (such as durum, kapsalon, or doner). This deal does not apply to smaller snacks."
     }
 ]
