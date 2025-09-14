@@ -1,39 +1,14 @@
-import Image from "next/image";
-import Link from "next/link";
+'use client'
 import EmblaCarousel from "@/components/EmblaCarousel";
-import partners from "@/data/partners.json";
-
-type Partner = {
-  slug: string;
-  title: string;
-  subtitle?: string;
-  img?: string;
-};
-
-function pickRandom<T>(arr: T[], n: number): T[] {
-  const copy = [...arr];
-  for (let i = copy.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [copy[i], copy[j]] = [copy[j], copy[i]];
-  }
-  return copy.slice(0, Math.min(n, copy.length));
-}
-
-// Show different random partners on each request (optional)
-// export const dynamic = "force-dynamic";
+import { EmblaOptionsType } from "embla-carousel";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import Script from "next/script";
 
 export default function Home() {
-  // Carousel images (static list for now)
-  const SLIDES = [
-    "/images/partners/KortrijkStudentenStad.jpg",
-    "/images/partners/Howest.jpg",
-    "/images/partners/Vives.png", // use .png if that's the file you have
-  ];
-  const OPTIONS = { loop: true };
-
-  // Pick 3 random partners from data/partners.json
-  const featuredPartners = pickRandom(partners as Partner[], 3);
-
+  const OPTIONS: EmblaOptionsType = { loop: true };
+  const SLIDE_COUNT = 5;
+  const SLIDES = [];
   return (
     <main>
       {/* Hero */}
