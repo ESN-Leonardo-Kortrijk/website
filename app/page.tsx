@@ -21,13 +21,6 @@ function pickRandom<T>(arr: T[], n: number): T[] {
 }
 
 export default function Home() {
-  // Carousel images (static for now)
-  const SLIDES = [
-    "/images/partners/KortrijkStudentenStad.jpg",
-    "/images/partners/Howest.jpg",
-    "/images/partners/Vives.jpg",
-  ];
-  const OPTIONS: EmblaOptionsType = { loop: true };
 
   // Random 3 partners from JSON
   const featuredPartners = pickRandom(partners as Partner[], 3);
@@ -75,10 +68,10 @@ export default function Home() {
       </section>
 
       {/* Carousel */}
-      <section className="mx-auto max-w-6xl px-4 mt-12">
+      {/* <section className="mx-auto max-w-6xl px-4 mt-12">
         <h2 className="text-2xl font-bold text-esn-dark-blue mb-4">Highlights</h2>
         <EmblaCarousel slides={SLIDES} options={OPTIONS} />
-      </section>
+      </section> */}
 
       {/* Quick links */}
       <section className="mx-auto max-w-6xl px-4 mt-10">
