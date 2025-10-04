@@ -6,7 +6,10 @@
         "img": "/images/partners/Howest.jpg",
         "affiliation": "Howest",
         "category": "institution",
-        "tags": ["education", "university"],
+        "tags": [
+            "education",
+            "university"
+        ],
         "promoted": false,
         "links": {
             "website": "https://www.howest.be/en?gad_source=1&gclid=EAIaIQobChMIpMS60pijiwMVM5VoCR1Dshs5EAAYASAAEgLP5fD_BwE",
@@ -23,7 +26,10 @@
         "img": "/images/partners/Vives.png",
         "affiliation": "Vives",
         "category": "institution",
-        "tags": ["education", "university"],
+        "tags": [
+            "education",
+            "university"
+        ],
         "promoted": false,
         "links": {
             "website": "https://www.vives.be/en/vives-international",
@@ -40,7 +46,10 @@
         "img": "/images/partners/Thelma&Louise.png",
         "affiliation": null,
         "category": "business",
-        "tags": ["food", "student-deal"],
+        "tags": [
+            "food",
+            "student-deal"
+        ],
         "links": {
             "facebook": "https://www.facebook.com/FrituurThelmaLouise/"
         },
@@ -55,7 +64,10 @@
         "img": "/images/partners/KortrijkStudentenStad.jpg",
         "affiliation": null,
         "category": "community",
-        "tags": ["student-life", "events"],
+        "tags": [
+            "student-life",
+            "events"
+        ],
         "promoted": false,
         "links": {
             "website": "https://www.kortrijkstudentenstad.be",
@@ -71,7 +83,10 @@
         "img": "/images/partners/café56.jpg",
         "affiliation": null,
         "category": "business",
-        "tags": ["food", "bar"],
+        "tags": [
+            "food",
+            "bar"
+        ],
         "promoted": true,
         "links": {
             "facebook": "https://www.facebook.com/Cafe56Kortrijk",
@@ -86,12 +101,35 @@
         "img": "/images/partners/PittaHouseSnack.jpg",
         "affiliation": null,
         "category": "business",
-        "tags": ["food", "student-deal"],
+        "tags": [
+            "food",
+            "student-deal"
+        ],
         "promoted": true,
-    "deal": "Free drink with every large dish order (such as durum, kapsalon, or doner). Snacks and fries are excluded.",
+        "deal": "Free drink with every large dish order (such as durum, kapsalon, or doner). Snacks and fries are excluded.",
         "links": {
             "facebook": "https://www.facebook.com/profile.php?id=100063489789670"
         },
         "content": "Pitta Snack House is a popular student spot in 't Straatje, known for its delicious pittas, kapsalons, durums, and doner dishes."
+    },
+    {
+        "slug": "ascend-bouldering",
+        "title": "ASCEND",
+        "subtitle": "Inclusive bouldering community (open to everyone)",
+        "img": "/images/partners/ascend.png",
+        "affiliation": null,
+        "category": "community",
+        "tags": [
+            "sport",
+            "bouldering",
+            "community"
+        ],
+        "promoted": true,
+        "links": {
+            "website": "https://ascendbouldering.github.io/ASCEND/",
+            "facebook": "https://www.facebook.com/ASCENDBouldering",
+            "email": "ascendbouldering@gmail.com"
+        },
+        "content": "🧗 **Welcome to ASCEND!**\n\nDo you enjoy bouldering? Have you never tried it before but want to start? Or are you looking for boulder buddies?\n\nASCEND is a friendly bouldering community open to everyone, not just students. The goal is to have a welcoming group of people you can climb with, chat with, and join for events – from casual meetups to competitions. We have climbers of all levels, from beginners to experienced members who are happy to share tips and enjoy climbing together.\n\nEveryone is welcome, no matter your experience level. The focus is on having fun together, making friends, climbing as a community, and sometimes even grabbing drinks together after climbing.\n\n---\n\n🪢 **Rope Climbing (Future Plans)**\nSome members are working on getting their belay certificates so we can go rope climbing at *The Transfo*, a new climbing gym near Kortrijk. Once certified, we’ll organize trips for members who want to try rope climbing, practice belaying, and climb together in a safe, fun environment.\n\n---\n\n💬 **Communication**\nWe use both Discord and WhatsApp to plan climbing days:\n- ✅ WhatsApp is used to see who’s going on which day\n- ✅ Discord is also checked, so either works fine\n\n---\n\n🌟 **Why Join?**\n- Beginner-friendly – anyone can start\n- Fun, social, and a great way to make friends\n- Participate in meetups, events, and future competitions\n\nMembership is **completely FREE! 🎉**\n\nAll you have to do is either:\n- Send an email to ascendbouldering@gmail.com\n- Contact **Equinox#5020** on Discord\n- Message us through our [Facebook page](https://www.facebook.com/ASCENDBouldering)\n\nwith your **full name** and your **phone number** for the WhatsApp group chat.\n\nIf you’d like more info, feel free to contact us anytime!"
     }
 ]

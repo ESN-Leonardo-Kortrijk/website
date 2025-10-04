@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import partners from "@/data/partners.json";
+import PartnersSlider from "@/components/PartnersSlider";
 
 type Partner = {
   slug: string;
@@ -20,8 +21,8 @@ function pickRandom<T>(arr: T[], n: number): T[] {
 
 
 export default async function Home() {
-  // Random 3 partners from JSON
-  const featuredPartners = pickRandom(partners as Partner[], 3);
+  // Use full partners list for slider; slider will show 3 at a time on wide screens
+  const allPartners = partners as Partner[];
 
   return (
     <main>
@@ -65,7 +66,7 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Partner highlights (random 3) with dynamic logo sizing */}
+      {/* Partners slider (one visible with arrows) */}
       <section className="mx-auto max-w-6xl px-4 mt-12 mb-16">
         <div className="flex items-baseline justify-between">
           <h2 className="text-2xl font-bold text-esn-dark-blue">Our partners</h2>
@@ -73,30 +74,8 @@ export default async function Home() {
             View all
           </Link>
         </div>
-        <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-6">
-          {featuredPartners.map((p) => (
-            <Link
-              key={p.slug}
-              href={`/partners/${p.slug}`}
-              className="group rounded-lg overflow-hidden shadow hover:shadow-md transition bg-white"
-            >
-              <div className="relative aspect-[16/9] bg-white">
-                <div className="absolute inset-0 flex items-center justify-center p-2">
-                  <img
-                    src={p.img || "/images/ESN_Leo_logo.png"}
-                    alt={p.title}
-                    className="max-w-full max-h-full object-contain"
-                  />
-                </div>
-              </div>
-              <div className="p-4">
-                <h3 className="font-semibold text-esn-dark-blue group-hover:text-esn-cyan transition">
-                  {p.title}
-                </h3>
-                {p.subtitle && <p className="text-sm text-gray-600 mt-1">{p.subtitle}</p>}
-              </div>
-            </Link>
-          ))}
+        <div className="mt-6">
+          <PartnersSlider partners={allPartners} />
         </div>
       </section>
     </main>
