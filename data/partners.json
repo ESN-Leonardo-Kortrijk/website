@@ -4,6 +4,10 @@
         "title": "Howest",
         "subtitle": "University of Applied Sciences",
         "img": "/images/partners/Howest.jpg",
+        "affiliation": "Howest",
+        "category": "institution",
+        "tags": ["education", "university"],
+        "promoted": false,
         "links": {
             "website": "https://www.howest.be/en?gad_source=1&gclid=EAIaIQobChMIpMS60pijiwMVM5VoCR1Dshs5EAAYASAAEgLP5fD_BwE",
             "facebook": "https://www.facebook.com/howestbe",
@@ -17,6 +21,10 @@
         "title": "Vives University of Applied Sciences",
         "subtitle": "University of Applied Sciences",
         "img": "/images/partners/Vives.png",
+        "affiliation": "Vives",
+        "category": "institution",
+        "tags": ["education", "university"],
+        "promoted": false,
         "links": {
             "website": "https://www.vives.be/en/vives-international",
             "facebook": "https://www.facebook.com/viveshogeschool",
@@ -30,16 +38,25 @@
         "title": "Thelma & Louise",
         "subtitle": "Beloved fry shop among students and locals",
         "img": "/images/partners/Thelma&Louise.png",
+        "affiliation": null,
+        "category": "business",
+        "tags": ["food", "student-deal"],
         "links": {
             "facebook": "https://www.facebook.com/FrituurThelmaLouise/"
         },
-        "content": "Frituur Thelma & Louise is a beloved spot among students and locals in Kortrijk. Famous for its generous portions and wide selection of fries, snacks, and burgers, it’s the go-to place for a tasty meal with friends.\n\n**Deal:** ESN card holders enjoy a plain 10% discount after showing their card."
+        "promoted": true,
+        "deal": "ESN card holders enjoy a plain 10% discount after showing their card.",
+        "content": "Frituur Thelma & Louise is a beloved spot among students and locals in Kortrijk. Famous for its generous portions and wide selection of fries, snacks, and burgers, it\u2019s the go-to place for a tasty meal with friends."
     },
     {
         "slug": "kortrijk-studenten-stad",
         "title": "Kortrijk Studenten Stad",
         "subtitle": "Student life in Kortrijk",
         "img": "/images/partners/KortrijkStudentenStad.jpg",
+        "affiliation": null,
+        "category": "community",
+        "tags": ["student-life", "events"],
+        "promoted": false,
         "links": {
             "website": "https://www.kortrijkstudentenstad.be",
             "facebook": "https://www.facebook.com/KortrijkStudentenstad",
@@ -52,6 +69,10 @@
         "title": "Café 56",
         "subtitle": "Iconic café in Kortrijk",
         "img": "/images/partners/café56.jpg",
+        "affiliation": null,
+        "category": "business",
+        "tags": ["food", "bar"],
+        "promoted": true,
         "links": {
             "facebook": "https://www.facebook.com/Cafe56Kortrijk",
             "instagram": "https://www.instagram.com/cafe56_kortrijk"
@@ -63,9 +84,14 @@
         "title": "Pitta House Snack",
         "subtitle": "Tasty pitta and doner spot",
         "img": "/images/partners/PittaHouseSnack.jpg",
+        "affiliation": null,
+        "category": "business",
+        "tags": ["food", "student-deal"],
+        "promoted": true,
+    "deal": "Free drink with every large dish order (such as durum, kapsalon, or doner). Snacks and fries are excluded.",
         "links": {
             "facebook": "https://www.facebook.com/profile.php?id=100063489789670"
         },
-        "content": "Pitta Snack House is a popular student spot in 't Straatje, known for its delicious pittas, kapsalons, durums, and doner dishes.\n\n**Deal:** Free drink with every large dish order (such as durum, kapsalon, or doner). This deal does not apply to smaller snacks."
+        "content": "Pitta Snack House is a popular student spot in 't Straatje, known for its delicious pittas, kapsalons, durums, and doner dishes."
     }
 ]

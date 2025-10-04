@@ -1,5 +1,6 @@
 import Link from "next/link";
 import partners from "@/data/partners.json";
+import PartnersFilter from "@/components/PartnersFilter";
 
 type Partner = {
     slug: string;
@@ -20,31 +21,8 @@ export default function PartnersPage() {
                 <p className="mt-2 text-gray-600">Discover our local and academic partners.</p>
             </header>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {list.map((p) => (
-                    <Link
-                        key={p.slug}
-                        href={`/partners/${p.slug}`}
-                        className="group rounded-lg border overflow-hidden shadow hover:shadow-md transition bg-white"
-                    >
-                        <div className="relative aspect-[16/9] bg-white">
-                            <div className="absolute inset-0 flex items-center justify-center p-2 sm:p-4">
-                                <img
-                                    src={p.img || "/images/ESN_Leo_logo.png"}
-                                    alt={p.title}
-                                    className="max-w-full max-h-full object-contain"
-                                />
-                            </div>
-                        </div>
-                        <div className="p-4">
-                            <h3 className="font-semibold text-esn-dark-blue group-hover:text-esn-cyan transition">
-                                {p.title}
-                            </h3>
-                            {p.subtitle && <p className="text-sm text-gray-600 mt-1">{p.subtitle}</p>}
-                        </div>
-                    </Link>
-                ))}
-            </div>
+            {/* Use client-side filter component for interactive filtering */}
+            <PartnersFilter partners={list} />
         </div>
     );
 }
