@@ -27,8 +27,25 @@ export default function NavBar() {
         </svg>
       </button>
 
-      {/* Desktop nav */}
+      {/* Desktop nav (explicit Home + other links) */}
       <ul className="hidden lg:flex gap-6">
+        {/* Explicit Home link so there's a visible button besides the logo */}
+        <li key="/">
+          {(() => {
+            const active = isActive(pathname, "/");
+            return (
+              <Link
+                href="/"
+                aria-current={active ? "page" : undefined}
+                className={`text-lg font-semibold transition ${
+                  active ? "text-esn-cyan" : "text-esn-dark-blue hover:text-esn-cyan"
+                }`}
+              >
+                Home
+              </Link>
+            );
+          })()}
+        </li>
         {navLinks.map((link) => {
           const active = isActive(pathname, link.href);
           return (
@@ -50,6 +67,24 @@ export default function NavBar() {
       {/* Mobile nav dropdown */}
       {open && (
         <ul className="absolute right-0 mt-2 w-48 bg-white rounded shadow-lg flex flex-col z-50 lg:hidden">
+          {/* Home link for mobile dropdown */}
+          <li key="/">
+            {(() => {
+              const active = isActive(pathname, "/");
+              return (
+                <Link
+                  href="/"
+                  aria-current={active ? "page" : undefined}
+                  className={`block px-4 py-2 transition ${
+                    active ? "text-esn-cyan" : "text-esn-dark-blue hover:bg-esn-cyan/10"
+                  }`}
+                  onClick={() => setOpen(false)}
+                >
+                  Home
+                </Link>
+              );
+            })()}
+          </li>
           {navLinks.map((link) => {
             const active = isActive(pathname, link.href);
             return (

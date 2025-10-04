@@ -12,6 +12,7 @@ type Partner = {
     img?: string;
     date?: string;
     links?: Record<string, string>;
+    deal?: string;
     content?: string; // optional markdown stored in JSON
 };
 
@@ -85,6 +86,14 @@ export default function PartnerPage({ params }: { params: { slug: string } }) {
                         </article>
                     ) : (
                         <p className="text-gray-700">More information coming soon.</p>
+                    )}
+
+                    {/* Deal (if present) - moved to bottom of details */}
+                    {p.deal && (
+                        <div className="mt-6 p-4 rounded-md bg-esn-cyan/10 border border-esn-cyan">
+                            <h4 className="font-semibold text-esn-dark-blue">Deal</h4>
+                            <p className="mt-2 text-gray-700">{p.deal}</p>
+                        </div>
                     )}
                 </div>
             </div>
